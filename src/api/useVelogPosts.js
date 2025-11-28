@@ -22,7 +22,12 @@ export function useVelogPosts(pageSize = 6) {
   useEffect(() => {
     const fetchRss = () => {
       const xhr = new XMLHttpRequest();
-      xhr.open("GET", "/api/velog/rss");
+      // GitHub Pages에서는 CORS 프록시 사용, 개발 환경에서는 Vite 프록시 사용
+      const velogRssUrl = "https://v2.velog.io/rss/@int_1sy";
+      const apiUrl = import.meta.env.DEV 
+        ? "/api/velog/rss" 
+        : `https://api.allorigins.win/raw?url=${encodeURIComponent(velogRssUrl)}`;
+      xhr.open("GET", apiUrl);
       xhr.onload = () => {
         try {
           const xmlDocs = new DOMParser().parseFromString(
