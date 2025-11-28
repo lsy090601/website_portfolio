@@ -143,7 +143,7 @@ export default function Projects() {
     goal: "전동 킥보드 안전 강화를 위한 AI 감지 솔루션",
     feachers:
       "얼굴 인식 / 헬멧 감지 / 면허증 확인 / QR 기반 인증",
-    stack: ["HTML", "JS", "Python(AI)", "FASTAPI"],
+    stack: ["HTML", "javaScript", "Python"],
     image: sra,
   },
   {
