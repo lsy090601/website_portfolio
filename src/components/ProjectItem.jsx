@@ -60,18 +60,30 @@ export default function ProjectItem({
 
         {Array.isArray(stack) && stack.length > 0 ? (
           <ul className="project-stack">
-            {stack.map((tech) => {
-              const iconSrc = stackIconMap[tech];
+            {stack.map((tech, idx) => {
+              const normalizedTech = typeof tech === "string" ? tech.trim() : "";
+              const iconSrc = stackIconMap[normalizedTech];
+
+              if (!iconSrc) {
+                return (
+                  <li
+                    className="project-stack-item project-stack-text"
+                    key={`${normalizedTech || "stack"}-${idx}`}
+                    aria-label={normalizedTech}
+                  >
+                    {normalizedTech || "-"}
+                  </li>
+                );
+              }
+
               return (
-                <li className="project-stack-item" key={tech}>
-                  {iconSrc && (
-                    <img
-                      src={iconSrc}
-                      alt=""
-                      aria-hidden="true"
-                      className="project-stack-icon"
-                    />
-                  )}
+                <li className="project-stack-item" key={`${normalizedTech}-${idx}`}>
+                  <img
+                    src={iconSrc}
+                    alt={`${normalizedTech} 아이콘`}
+                    aria-hidden="true"
+                    className="project-stack-icon"
+                  />
                 </li>
               );
             })}

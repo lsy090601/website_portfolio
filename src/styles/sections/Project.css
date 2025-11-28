@@ -31,11 +31,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
   border-radius: 8px;
   background-color: #f4f2ed;
   transition: transform 0.2s;
+  min-width: 36px;
+  min-height: 36px;
+  padding: 8px;
 }
 
 .project-stack-item:hover {
@@ -46,4 +47,14 @@
   width: 20px;
   height: 20px;
   object-fit: contain;
+}
+
+.project-stack-text {
+  padding: 6px 10px;
+  min-height: 0;
+  min-width: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #5a5147;
+  border: 1px solid #e0d9cf;
 }
