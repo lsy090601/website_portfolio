@@ -17,6 +17,7 @@ import ViteIcon from "../assets/Vite-Light.svg";
 import IllustratorIcon from "../assets/Illustrator.svg";
 import PhotoshopIcon from "../assets/Photoshop.svg";
 import flutterIcon from "../assets/Flutter-Light.svg";
+import post from "../assets/PostgreSQL-Light.png";
 
 const categories = ["전체", "프론트엔드", "백엔드", "디자인", "배포·협업"];
 
@@ -34,6 +35,7 @@ const skills = [
   { name: "Python", icon: PythonIcon, category: "백엔드" },
   { name: "C", icon: CIcon, category: "백엔드" },
   { name: "Supabase", icon: SupabaseIcon, category: "백엔드" },
+  { name: "PostgreSQL", icon: post, category: "백엔드" },
 
   // 디자인
   { name: "Figma", icon: FigmaIcon, category: "디자인" },
