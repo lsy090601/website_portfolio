@@ -17,7 +17,7 @@ import ViteIcon from "../assets/Vite-Light.svg";
 import IllustratorIcon from "../assets/Illustrator.svg";
 import PhotoshopIcon from "../assets/Photoshop.svg";
 import flutterIcon from "../assets/Flutter-Light.svg";
-import post from "../assets/PostgreSQL-Light.png";
+import post from "../assets/PostgreSQL-Light.svg";
 
 const categories = ["전체", "프론트엔드", "백엔드", "디자인", "배포·협업"];
 
