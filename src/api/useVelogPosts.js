@@ -17,23 +17,47 @@ function extractThumbnailAndDescription(htmlString) {
 export function useVelogPosts(pageSize = 6) {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   const [page, setPage] = useState(1);
 
   useEffect(() => {
-    const fetchRss = () => {
-      const xhr = new XMLHttpRequest();
-      // GitHub Pages에서는 CORS 프록시 사용, 개발 환경에서는 Vite 프록시 사용
-      const velogRssUrl = "https://v2.velog.io/rss/@int_1sy";
-      const apiUrl = import.meta.env.DEV 
-        ? "/api/velog/rss" 
-        : `https://api.allorigins.win/raw?url=${encodeURIComponent(velogRssUrl)}`;
-      xhr.open("GET", apiUrl);
-      xhr.onload = () => {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 10000); // 10s timeout
+
+    const velogRssUrl = "https://v2.velog.io/rss/@int_1sy";
+    const localJsonUrl = "/velog.json";
+    const apiUrl = import.meta.env.DEV
+      ? "/api/velog/rss"
+      : `https://api.allorigins.win/raw?url=${encodeURIComponent(velogRssUrl)}`;
+
+    // Production: try static `public/velog.json` first (populated by GitHub Action).
+    const tryLocalJson = async () => {
+      try {
+        const r = await fetch(localJsonUrl, { signal: controller.signal });
+        if (!r.ok) throw new Error(`local json not available (${r.status})`);
+        const json = await r.json();
+        setPosts(json);
+        return true;
+      } catch (e) {
+        return false;
+      }
+    };
+
+    const doFetch = async () => {
+      if (!import.meta.env.DEV) {
+        const ok = await tryLocalJson();
+        if (ok) return;
+      }
+
+      // Fallback: use CORS proxy (may fail on GitHub Pages)
+      fetch(apiUrl, { signal: controller.signal })
+      .then((res) => {
+        if (!res.ok) throw new Error(`Network response was not ok (${res.status})`);
+        return res.text();
+      })
+      .then((text) => {
         try {
-          const xmlDocs = new DOMParser().parseFromString(
-            xhr.response,
-            "text/xml"
-          );
+          const xmlDocs = new DOMParser().parseFromString(text, "text/xml");
           const items = xmlDocs.getElementsByTagName("item");
           const parsed = [];
           for (let i = 0; i < items.length; i++) {
@@ -46,12 +70,9 @@ export function useVelogPosts(pageSize = 6) {
             for (let child of item.children) {
               if (child.tagName === "title") title = child.textContent;
               else if (child.tagName === "link") link = child.textContent;
-              else if (child.tagName === "pubDate")
-                pubDate = child.textContent.substring(0, 10);
+              else if (child.tagName === "pubDate") pubDate = child.textContent.substring(0, 10);
               else if (child.tagName === "description") {
-                const extracted = extractThumbnailAndDescription(
-                  child.textContent
-                );
+                const extracted = extractThumbnailAndDescription(child.textContent);
                 thumbnail = extracted.thumbnail;
                 description = extracted.description;
               }
@@ -67,23 +88,30 @@ export function useVelogPosts(pageSize = 6) {
           setPosts(parsed);
         } catch (e) {
           console.error("Velog RSS parse error", e);
-        } finally {
-          setLoading(false);
+          setError("파싱 실패");
         }
-      };
-      xhr.onerror = () => {
-        console.error("Velog RSS fetch error");
+      })
+      .catch((e) => {
+        if (e.name === "AbortError") {
+          console.error("Velog RSS fetch timeout");
+          setError("요청 타임아웃");
+        } else {
+          console.error("Velog RSS fetch error", e);
+          setError(e.message || "fetch error");
+        }
+      })
+      .finally(() => {
+        clearTimeout(timeout);
         setLoading(false);
-      };
-      xhr.send();
+      });
+
+    return () => {
+      clearTimeout(timeout);
+      controller.abort();
     };
-    fetchRss();
   }, []);
 
-  const totalPages = useMemo(
-    () => Math.max(1, Math.ceil(posts.length / pageSize)),
-    [posts.length, pageSize]
-  );
+  const totalPages = useMemo(() => Math.max(1, Math.ceil(posts.length / pageSize)), [posts.length, pageSize]);
   const pageItems = useMemo(() => {
     const start = (page - 1) * pageSize;
     return posts.slice(start, start + pageSize);
@@ -95,6 +123,7 @@ export function useVelogPosts(pageSize = 6) {
   return {
     posts,
     loading,
+    error,
     page,
     setPage,
     totalPages,

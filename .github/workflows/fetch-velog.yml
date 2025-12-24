@@ -1,0 +1,35 @@
+name: Fetch Velog RSS
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # every 6 hours
+  push:
+    branches: [ main ]
+  workflow_dispatch: {}
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Install deps
+        run: npm install xml2js
+      - name: Run fetch script
+        run: node scripts/fetchVelog.js
+      - name: Commit velog.json if changed
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add public/velog.json || true
+          if git diff --staged --quiet; then
+            echo "No changes to velog.json"
+          else
+            git commit -m "chore: update velog.json [skip ci]" || true
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
