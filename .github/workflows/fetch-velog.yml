@@ -16,8 +16,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-      - name: Install deps
-        run: npm install xml2js
+      - name: Install project deps
+        run: npm ci
+      - name: Install xml2js for parsing
+        run: npm install xml2js --no-save
       - name: Run fetch script
         run: node scripts/fetchVelog.js
       - name: Commit velog.json if changed
@@ -33,3 +35,10 @@ jobs:
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build
+        run: npm run build
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./dist
+          github_token: ${{ secrets.GITHUB_TOKEN }}
