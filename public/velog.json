@@ -1,0 +1,142 @@
+[
+  {
+    "title": "#27 #객체 지향 프로그래밍이 붕어빵과 붕어빵틀로 설명될 수 없는 이유",
+    "url": "https://velog.io/@int_1sy/27-%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%B4-%EB%B6%95%EC%96%B4%EB%B9%B5%EA%B3%BC-%EB%B6%95%EC%96%B4%EB%B9%B5%ED%8B%80%EB%A1%9C-%EC%84%A4%EB%AA%85%EB%90%A0-%EC%88%98-%EC%97%86%EB%8A%94-%EC%9D%B4%EC%9C%A0",
+    "date": "Fri, 19 De",
+    "thumbnail": "https://velog.velcdn.com/images/int_1sy/post/2ef63793-9e28-4b17-a57a-359a69125ed4/image.png",
+    "description": "1. 객체 지향 프로그래밍이란?\n객체 지향 프로그래밍(Object-Oriented Programming, OOP)은\n프로그램을 객체들의 집합으로 보고,\n이 객체들이 서로 상호작용하며 하나의 시스템을 구성하도록 설계하는 프로그래밍 방식이다.\n사전적으로는 다음과 같이 정의됩니다.\n\n다소 추상적으로 느껴질 수 있지만, 이를 쉽게 풀어보면 다음과 같이 이해할 수 "
+  },
+  {
+    "title": "#25 #LG CNS AI 지니어스 우수상 회고",
+    "url": "https://velog.io/@int_1sy/25-LG-CNS-AI-%EC%A7%80%EB%8B%88%EC%96%B4%EC%8A%A4-%EC%9A%B0%EC%88%98%EC%83%81-%ED%9A%8C%EA%B3%A0",
+    "date": "Thu, 27 No",
+    "thumbnail": "https://velog.velcdn.com/images/int_1sy/post/42dc20eb-0701-4c9a-98da-e1db880e2a92/image.jpg",
+    "description": "✨ 7개월 동안 만들어낸 우리 팀의 첫 AI 서비스, SRA\n안녕하세요! 이번 글은 LG CNS에서 주관하는 AI 지니어스 프로젝트를 약 7개월 동안 준비하고 완성한 과정들을 기록한 회고록입니다.\n\n저에게는 단순한 대회 과제가 아니라, 실제로 불편했던 문제를 해결해보고 싶은 마음에서 시작된 꽤 진지한 도전이었어요.\n그래도 열심히 하다 보니 과정 곳곳에 소소"
+  },
+  {
+    "title": "#22 #포트폴리오 준비(2)",
+    "url": "https://velog.io/@int_1sy/22-%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4-%EC%A4%80%EB%B9%842",
+    "date": "Thu, 27 No",
+    "thumbnail": "https://velog.velcdn.com/images/int_1sy/post/6bf93d03-e8c0-4775-bd49-db7f411be0d4/image.png",
+    "description": "학교 테크폴리오 공모전 참가를 위한 웹사이트 형식 포트폴리오 제작 과정을 기록합니다. 디자인 능력이 미숙한 점을 인지하고, 프론트엔드 개발자 포트폴리오를 레퍼런스 삼아 개발자의 성장 과정과 기술 활용 능력을 나타내는 데 중점을 두었습니다.\n1. 와이어프레임 및 구조 설계\n송진경 개발자의 포트폴리오를 기반으로 하여, 학생으로서의 기술 숙련도와 학습 기록을 강"
+  },
+  {
+    "title": "#21 #리액트 탄생 알아보기",
+    "url": "https://velog.io/@int_1sy/21-%EB%A6%AC%EC%95%A1%ED%8A%B8-%ED%83%84%EC%83%9D-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0",
+    "date": "Sun, 02 No",
+    "thumbnail": "https://velog.velcdn.com/images/int_1sy/post/7806e670-70d3-46f0-82ec-021390428937/image.png",
+    "description": "1. 2000년대 초반 — 정적인 웹의 시대\n2001~2003년 무렵, 웹페이지는 대부분 정적인 HTML 파일로 구성되었다.\n서버가 완성된 HTML을 만들어 브라우저로 전달 → 사용자는** 보기만 가능, **상호작용 불가.\n페이지가 바뀌려면 항상 새로고침이 필요했다.\n한계:\n사용자는 단순히 “읽는 사람”이었고, 웹은 “보는 공간”일 뿐이었다.\n“버튼을 누르"
+  },
+  {
+    "title": "#20 #JS 공부하기",
+    "url": "https://velog.io/@int_1sy/20-JS-%EA%B3%B5%EB%B6%80%ED%95%98%EA%B8%B0",
+    "date": "Sun, 02 No",
+    "thumbnail": "https://velog.velcdn.com/images/int_1sy/post/2335f600-bd55-47f3-948e-c81ba7d089c7/image.png",
+    "description": "안녕하세요 👋 오늘은 자바스크립트의 핵심 개념 중에서도\n초보 때 가장 많이 헷갈리는 스코프(Scope) 와 호이스팅(Hoisting) 개념을 정리해볼게요!\n1. 스코프(Scope)란?\n스코프는 “변수에 접근할 수 있는 유효 범위”를 말해요.\n쉽게 말하면, “이 변수는 어디까지 쓸 수 있을까?”를 정하는 구역이에요!\n스코프의 종류\n\n\n\n구분\n설명\n예시\n\n\n"
+  },
+  {
+    "title": "#19 #포트폴리오 준비",
+    "url": "https://velog.io/@int_1sy/19-%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4-%EC%A4%80%EB%B9%84",
+    "date": "Tue, 28 Oc",
+    "thumbnail": null,
+    "description": "0. 시작하기 전에\n안녕하세요! 진정한 개발의 세계에 발을 들인지 이제 7개월째 되는 초보 개발자입니다 👶🏻💻\n아직은 많이 서툴지만, 마이스터고 학생으로서 3학년 때 취업을 준비해야 하기에\n조금이라도 일찍, 더 많은 경험과 결과물을 쌓아두고 싶다는 마음으로\n포트폴리오 준비를 미리 시작하게 되었어요 🌟\n1. 제작 과정\n저는 “남들과는 다른, 나만의 특"
+  },
+  {
+    "title": "#18 #[회고] 미톤(Mithon) 우수상의 기록 : Respeak 개발기",
+    "url": "https://velog.io/@int_1sy/18-%EB%AF%B8%ED%86%A4-%ED%9B%84%EA%B8%B0",
+    "date": "Mon, 27 Oc",
+    "thumbnail": "https://velog.velcdn.com/images/int_1sy/post/77ae9c2c-0b4b-4e28-8c77-565f838c2226/image.JPG",
+    "description": "드디어 미림 해커톤(미톤)이 끝났다! 지난번 글에서 &quot;기록하는 사람은 같은 문제를 두 번 반복하지 않는다&quot;라고 썼던 다짐을 지키기 위해, 이번 해커톤의 회고를 남겨보려 한다.\n이번 해커톤은 성수동 알파코 제1캠퍼스에서 무박 2일로 진행됐다. 밤을 새우며 코드를 치는 게 힘들기도 했지만, 팀원들과 함께 머리를 맞대고 하나의 프로덕트를 만들어"
+  },
+  {
+    "title": "#17 #React JSX & Babel & DSL & Template Literal & Process 정리",
+    "url": "https://velog.io/@int_1sy/17-React-JSX-Babel-DSL-Template-Literal-Process-%EC%A0%95%EB%A6%AC",
+    "date": "Tue, 21 Oc",
+    "thumbnail": "https://velog.velcdn.com/images/int_1sy/post/8bee1663-7152-4c89-9207-2912e656af1d/image.png",
+    "description": "1️⃣ JSX란?\nJSX(JavaScript XML)는 자바스크립트 코드 안에서 HTML과 유사한 문법을 사용해 UI를 선언적으로 설계할 수 있는 문법 확장(Syntax Extension) 이다.\n2013년 페이스북(현 메타) 에서 공개되었으며, 프론트엔드 생태계에 큰 영향을 미쳤다.\n명령형 방식이 아닌 선언형 컴포넌트 시대를 열었고, 전 세계 개발자들이 "
+  },
+  {
+    "title": "#15 #기록의 중요성",
+    "url": "https://velog.io/@int_1sy/15-%EA%B8%B0%EB%A1%9D%EC%9D%98-%EC%A4%91%EC%9A%94%EC%84%B1",
+    "date": "Fri, 19 Se",
+    "thumbnail": null,
+    "description": "기록이 왜 중요한가?\n\n1. 이해의 차이\n기록의 중요성에 대해 고민해 보니, 결국 이해도의 차이에서 비롯된다는 생각이 들었다.\n무언가를 기록한다는 건 단순히 글을 적는 행위가 아니라, 타인에게 설명할 수 있을 정도로 충분히 이해한 상태여야 가능하다고 믿는다.\n특히, “기록하는 사람은 같은 문제를 두 번 반복하지 않는다”는 말이 크게 와닿았다.\n개발은 단순히"
+  },
+  {
+    "title": "#16 #얼굴 인증(Face Authentication) 기능 구현",
+    "url": "https://velog.io/@int_1sy/16-%EC%96%BC%EA%B5%B4-%EC%9D%B8%EC%A6%9DFace-Authentication-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84",
+    "date": "Mon, 08 Se",
+    "thumbnail": null,
+    "description": "전동 킥보드 이용 시 헬멧 착용 여부를 AI로 인식해\n안전한 주행 문화를 만드는 스마트 안전 시스템 쓰라(SR.A)를\nAI지니어스 파이널 미션 프로젝트로 개발하기로 결정했다.\n이 시스템에서 나는,\n회원가입 시 등록한 사용자의 면허증 얼굴과 실시간 카메라의 얼굴이 동일인인지 판별하는 기능을 구현해야 했다.\n즉, 헬멧 인식 시 실제 사람이 면허증의 주인과 같은"
+  },
+  {
+    "title": "#14 #깃허브 연동 방법",
+    "url": "https://velog.io/@int_1sy/14-%EA%B9%83%ED%97%88%EB%B8%8C-%EC%97%B0%EB%8F%99-%EB%B0%A9%EB%B2%95",
+    "date": "Tue, 26 Au",
+    "thumbnail": "https://velog.velcdn.com/images/int_1sy/post/c0dac9d9-7034-4f4e-b9c2-aead97d9dbde/image.png",
+    "description": "안녕하세요! 오늘은 어렵디 어려운 깃허브 연동 방법에 대해 알아보려고 해요 😎\nGitHub Organization이란?\n본격적으로 시작하기에 앞서서 GitHub Organization에 대해 알아볼게요\nGitHub Organization은 쉽게 말해 여러 사람들이 모여서 프로젝트를 관리하고 협업할 수 있는** 그룹 계정** 같은 거라고 이해하시면 댈것같아"
+  },
+  {
+    "title": "#13 #GitHub 커밋 메세지 컨벤션",
+    "url": "https://velog.io/@int_1sy/13-GitHub-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%84%B8%EC%A7%80-%EC%BB%A8%EB%B2%A4%EC%85%98",
+    "date": "Mon, 25 Au",
+    "thumbnail": "https://velog.velcdn.com/images/int_1sy/post/a5d69ad3-2260-49c1-a890-35eb8998ee90/image.png",
+    "description": "안녕하세요! 오늘은 GitHub에서 커밋 컨벤션에 대해 같이 알아봐요 ✨\n깃허브는 처음엔 너무 어렵게 느껴지지만! 이 포스트를 작성하면서 같이 깃허브 마스터가 되어봐용_ 헤헤_\n🖤 GitHub란?\nGitHub = 깃(Git) + 허브(Hub)\n*깃(Git) *: 버전 관리 도구\n허브(Hub) : 함께 모이는 공간\n즉, 깃허브는 버전 관리 도구 깃을 바탕으"
+  },
+  {
+    "title": "#12 #자바여름방학과제",
+    "url": "https://velog.io/@int_1sy/12-%EC%9E%90%EB%B0%94%EC%97%AC%EB%A6%84%EB%B0%A9%ED%95%99%EA%B3%BC%EC%A0%9C",
+    "date": "Fri, 25 Ju",
+    "thumbnail": "https://velog.velcdn.com/images/int_1sy/post/15116ed4-8e37-4930-bf3b-5d78f334b156/image.png",
+    "description": "1.실수를 반복해서 입력받아 합과 평균을 출력하는 프로그램\n파일명: Accumulate_학번_제출날짜.java\n\n조건  \n\ndo~while문을 사용하여 숫자를 반복해서 입력받고  \n0을 입력받으면 반복을 중단하고 합을 출력한다.  \n평균은 소수 아래 5자리까지 구한다.\n\n&lt;&lt;출력 결과&gt;&gt;\n1번째 숫자를 입력하세요 : 3.25\n2번째 숫"
+  },
+  {
+    "title": "#11 #노트북 소리 안날 때 오류",
+    "url": "https://velog.io/@int_1sy/11-%EB%85%B8%ED%8A%B8%EB%B6%81-%EC%86%8C%EB%A6%AC-%EC%95%88%EB%82%A0-%EB%95%8C-%EC%98%A4%EB%A5%98",
+    "date": "Sat, 19 Ju",
+    "thumbnail": "https://velog.velcdn.com/images/int_1sy/post/83b3f3d6-1928-4369-a2cc-6e1bb67f6dfb/image.png",
+    "description": "안녕하세용! \n오늘은 갑자기 노트북에서 소리가 안 나올 때 (입력도 안 되고 출력도 안 될 때!!)직접 고칠 수 있는 방법을 알려줄게요!  \n초보자도 할 수 있도록 차근차근 설명해볼게요\n이거 생각보다 고치기 까다롭더라고요,,, 한 이틀 고생하면서 고쳤답니다 ㅎㅎ\n\n✅ 1. 장치 관리자 열기\n\n시작 메뉴에서 장치 관리자(Device Manager) 검색  \n"
+  },
+  {
+    "title": "#10 #CSS",
+    "url": "https://velog.io/@int_1sy/09-CSS",
+    "date": "Sat, 05 Ju",
+    "thumbnail": null,
+    "description": "CSS 기초 스타일링\n\n&lt;style&gt;&lt;/style&gt;: HTML 문서 안에서 스타일(CSS)을 작성하는 태그\n\ncolor: red; - 글자의 색을 설정함 (예: 빨간색 글자)\n\nbackground-color: lightblue; - 요소의 배경 색 설정\n\nwidth: 300px; - 요소의 가로 길이 설정\n\nheight: 150px; "
+  },
+  {
+    "title": "#09 #REACT 파일 생성하기",
+    "url": "https://velog.io/@int_1sy/08-REACT-%ED%8C%8C%EC%9D%BC-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0",
+    "date": "Mon, 30 Ju",
+    "thumbnail": "https://velog.velcdn.com/images/int_1sy/post/cc55158f-093b-4c9e-b81b-411c91dc59a2/image.png",
+    "description": "안녕하세요! 오늘은 React 파일 만드는 법과 실행하는 방법을 알려드릴게요‼️리액트 깔고도 어떻게 실행하지...? 과거의 저 같이 헤메이지 마시고 이거 보고 해결하세요!!\n\n1. 터미널 열기\nVS Code 왼쪽 상단 Terminal → New Terminal을 클릭합니다.\n\n\n2. Vite로 리액트 설치\n아래 명령어를 입력해주세요:\nnpm create v"
+  },
+  {
+    "title": "#08 #JAVA #수행평가 준비",
+    "url": "https://velog.io/@int_1sy/JAVA-%EC%88%98%ED%96%89%ED%8F%89%EA%B0%80-%EC%A4%80%EB%B9%84",
+    "date": "Thu, 26 Ju",
+    "thumbnail": null,
+    "description": "1차원 배열의 정렬\n\n1. 오름차순\nimport java.util.Arrays;\npublic class 오름차순{\n    public static void main(String[] args){\n    int arr[] = {26,97,57,31,84};\n    Arrays.sort(arr);\n\n    System.out.println(Arrays.toStr"
+  },
+  {
+    "title": "#07 #CSS",
+    "url": "https://velog.io/@int_1sy/08-CSS",
+    "date": "Mon, 16 Ju",
+    "thumbnail": "https://velog.velcdn.com/images/int_1sy/post/df8ce086-9059-439d-a114-9e14b846d7b7/image.png",
+    "description": "** CSS란?**\n\nCSS란 Cascading Style Sheet로\nhtml로 뼈대를 잡아준 문서에, style을 입혀주는 역할을 합니다.\n\n\n📌 CSS 기본 사용법\n\n✅ CSS 작성 방법\ncss는 선택자로 html 요소를 선택해와,\n{} 안에 속성과 값을 입력해주는 형식으로 작성할 수 있습니다.\n선택자 {\n  속성명: 값;\n  속성명: 값;\n}\n속성"
+  },
+  {
+    "title": "#06 #JAVA",
+    "url": "https://velog.io/@int_1sy/06-JAVA",
+    "date": "Thu, 15 Ma",
+    "thumbnail": null,
+    "description": "질문1\n\nQ1. 1부터 N까지의 합을 단계별로 출력하기\n사용자로부터 양의 정수 N을 입력 받아, 1부터 N까지의 정수를 순차적으로 더해 나가며 각 단계의 덧셈 과정을 출력하는 프로그램을 작성하시오.\n출력 형식은 다음과 같다:\n정수 입력: 3\n1+2=33+3=66+4=10  \n정수 입력: 5\n1+2=33+3=66+4=1010+5=15\n&lt;코드&gt;\nim"
+  },
+  {
+    "title": "#05 #JAVA 팩토리얼 배우기",
+    "url": "https://velog.io/@int_1sy/05-JAVA-%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%96%BC-%EB%B0%B0%EC%9A%B0%EA%B8%B0",
+    "date": "Thu, 15 Ma",
+    "thumbnail": "https://velog.velcdn.com/images/int_1sy/post/fe18751f-f12b-4c9a-8235-f1e903a29a6a/image.png",
+    "description": "질문\n\nQ. 정수를 입력 받고, 1n까지 곱한 값을 출력할 때, 입력 받은 수보다 작은 1n까지 곱한 값 중 가장 큰값을 출력하고 n을 구한다.\n\n\n코드\n\nimport java.util.Scanner;\n\npublic class Main{\n    public static void main(String[] args) {\n        System.out.pri"
+  }
+]
