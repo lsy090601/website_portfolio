@@ -26,10 +26,26 @@ const StarIcon = (props) => (
 );
 
 export default function VelogPostsAuto() {
-  const { pageItems, loading, page, totalPages, nextPage } = useVelogPosts(10);
+  const { pageItems, loading, error, page, totalPages, nextPage } = useVelogPosts(10);
 
   if (loading) return <p>불러오는 중...</p>;
-
+  if (error)
+    return (
+      <div style={{ textAlign: "center", marginTop: "20px" }}>
+        <p>블로그 로드 실패: {error}</p>
+        <p>
+          배포환경에서 RSS 프록시가 차단될 수 있어 빌드 시 데이터를 생성중입니다. 잠시 후 새로고침해주세요.
+        </p>
+        <a
+          href="https://velog.io/@int_1sy/posts"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="more-velog"
+        >
+          벨로그 바로가기
+        </a>
+      </div>
+    );
   return (
     <>
       <Masonry
