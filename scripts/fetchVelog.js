@@ -1,5 +1,5 @@
-const fs = require('fs');
-const { parseStringPromise } = require('xml2js');
+import fs from 'fs';
+import { parseStringPromise } from 'xml2js';
 
 function extractThumbnailAndDescription(htmlString) {
   if (!htmlString) return { thumbnail: null, description: '' };
