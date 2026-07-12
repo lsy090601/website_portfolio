@@ -38,6 +38,8 @@ export function useVelogPosts(pageSize = 6) {
         const json = await r.json();
         console.log("Successfully loaded velog.json:", json.length, "posts");
         setPosts(json);
+        setError(null);
+        setLoading(false);
         return true;
       } catch (e) {
         console.error("Failed to load local velog.json:", e.message);
@@ -48,7 +50,6 @@ export function useVelogPosts(pageSize = 6) {
     const doFetch = async () => {
       const ok = await tryLocalJson();
       if (ok) {
-        setLoading(false);
         return;
       }
 
