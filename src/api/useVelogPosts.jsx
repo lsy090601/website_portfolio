@@ -32,12 +32,15 @@ export function useVelogPosts(pageSize = 6) {
 
     const tryLocalJson = async () => {
       try {
+        console.log("Trying to fetch velog.json from:", localJsonUrl);
         const r = await fetch(localJsonUrl, { signal: controller.signal });
         if (!r.ok) throw new Error(`local json not available (${r.status})`);
         const json = await r.json();
+        console.log("Successfully loaded velog.json:", json.length, "posts");
         setPosts(json);
         return true;
       } catch (e) {
+        console.error("Failed to load local velog.json:", e.message);
         return false;
       }
     };
