@@ -19,6 +19,10 @@ export default function Education() {
       period: "2024.02",
       name: "ITQ 한글엑셀 B",
     },
+    {
+      period: "2025.12",
+      name: "AICE Basic",
+    },
   ];
 
   const educations = [
@@ -33,6 +37,10 @@ export default function Education() {
     {
       period: "2025.05",
       name: "한국과학창의재단 SW동행프로젝트",
+    },
+    {
+      period: "2026.06 - 07",
+      name: "하인슈타인",
     },
   ];
 
