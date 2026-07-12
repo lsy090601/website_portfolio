@@ -25,7 +25,7 @@ export function useVelogPosts(pageSize = 6) {
     const timeout = setTimeout(() => controller.abort(), 10000);
 
     const velogRssUrl = "https://v2.velog.io/rss/@int_1sy";
-    const localJsonUrl = import.meta.env.BASE_URL + "velog.json";
+    const localJsonUrl = "./velog.json";
     const apiUrl = import.meta.env.DEV
       ? "/api/velog/rss"
       : `https://api.allorigins.win/raw?url=${encodeURIComponent(velogRssUrl)}`;
