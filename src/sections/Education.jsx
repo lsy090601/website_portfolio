@@ -31,6 +31,10 @@ export default function Education() {
       name: "공학도서관 ESG SCHOOL",
     },
     {
+      period: "2025.04 - 07",
+      name: "공학도서관 AI 지니어스",
+    },
+    {
       period: "2025.05",
       name: "한국과학창의재단 SW동행프로젝트",
     },
@@ -40,7 +44,7 @@ export default function Education() {
     },
     {
       period: "2026.06 - 07",
-      name: "하인슈타인",
+      name: "2026 SK 하인슈타인",
     },
   ];
 
