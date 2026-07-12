@@ -43,12 +43,10 @@ export function useVelogPosts(pageSize = 6) {
     };
 
     const doFetch = async () => {
-      if (!import.meta.env.DEV) {
-        const ok = await tryLocalJson();
-        if (ok) {
-          setLoading(false); // ✅ 누락된 setLoading 추가
-          return;
-        }
+      const ok = await tryLocalJson();
+      if (ok) {
+        setLoading(false);
+        return;
       }
 
       fetch(apiUrl, { signal: controller.signal })
